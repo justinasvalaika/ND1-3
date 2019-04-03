@@ -21,13 +21,28 @@ vector<Sduomenys> lentele;
 
 void Sduomenys::pildymas()
 {
-	int itemp, j=1;
+	int itemp, j=1,kk, o, lol;
+	char k;
 	cout << "Vardas: ";
 	cin >> vardas;
 	cout << "Pavarde: ";
 	cin >> pavarde;
 	pazymiai.clear();
-	do {
+	///////////////////////////////
+	cout<<"Generuoti atsitiktinai pazymius? T?";
+	cin>>k;
+	switch (k)
+	{
+    case ('T','t'):
+        cout<<"kelis pazymius? ";
+        cin>>kk;
+        for (o=0;o<kk; o++)
+            {
+                pazymiai.push_back(rand()%10);
+            }
+        break;
+    default:
+        do {
 		cout << j<<" -as ND: ";
 		cin >> itemp;
 		if (itemp > 0 && itemp <= 10)
@@ -36,6 +51,11 @@ void Sduomenys::pildymas()
 			    j++;
 			}
 	} while (itemp != 0);
+        break;
+	}
+	//////////////////////////////
+
+
 	vidurkis = 0;
 	for (int i : pazymiai)
 		vidurkis += i;
