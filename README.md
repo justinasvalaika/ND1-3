@@ -2,7 +2,7 @@
 namų darbas 1-3
 ## versijos
 
-0.1. 
+1. 
 2. bbb
 3. bb
 
