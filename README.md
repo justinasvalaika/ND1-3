@@ -2,9 +2,9 @@
 namų darbas 1-3
 ## versijos
 
-1. 
-2. bbb
-3. bb
+v0.1  
+v0.2
+v0.3
 
 ```c
 int roflž4;
