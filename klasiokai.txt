@@ -1,0 +1,7 @@
+Vardas          Pavarde       ND1 ND2 ND3 ND4 ND5 Egzaminas
+Petras          Gvaizdauskas  1   6   5   4   1   1
+Tomas           Masiulis      2   2   2   2   2   2
+Kestas          Rimkus        3   3   3   3   3   3
+Tomas           Norvaisis     4   4   4   4   4   4
+Justinas        Valaika       9  8  10  10  10  10
+Klipata         Abrikosas     10 8 9 10 10 8
