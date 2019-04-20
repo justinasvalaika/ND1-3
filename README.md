@@ -14,4 +14,5 @@ v0.2 https://github.com/justinasvalaika/ND1-3/tree/v0.2
 Itrauktas automatinis lentelės nuskaitymas klasiokai.txt
 Rezultatų išvedimas rūšiuojant-pagal pavardes.
 
-v0.3
+v0.3 https://github.com/justinasvalaika/ND1-3/tree/v0.3
+Perkelta viskaas į headerius
