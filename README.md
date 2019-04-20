@@ -10,6 +10,8 @@ Veikimas:
   Pabaigus įvedimą klausiama vidurkį ar medianą išvesti. V/v vidurkis; M/m mediana.
   Sugeneruojama lentelė.
 
-v0.2
+v0.2 https://github.com/justinasvalaika/ND1-3/tree/v0.2
+Itrauktas automatinis lentelės nuskaitymas klasiokai.txt
+Rezultatų išvedimas rūšiuojant-pagal pavardes.
 
 v0.3
