@@ -29,11 +29,11 @@ Grauzikai.txt kai galutinis >5
 Greičio duomenys: (faile: Laikai su debugu.png):
 failų generavimas su atsitiktiniu irasu kiekiu:
 kiekis, vnt       laikas, ms
-10                1,554
-100               2,063
-1000              10,324
-10000             79,823
-100000            769,665
+10-                1,554
+100-              2,063
+1000-              10,324
+10000-             79,823
+100000-            769,665
 Failu nuskaitymas (visu 5) ir surasymas duomenu i vektoriu: 554,897 ms;
 Vektoriaus isvedimas i du skirtingus failus: 1230,51 ms;
 
