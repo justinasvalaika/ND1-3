@@ -2,6 +2,8 @@
 #include "Duomenys.h"
 #include <chrono>
 
+string fpav[7]= {"desimt.txt","simtas.txt","stuka.txt","10k.txt","100k.txt","Tinginiai.txt","Grauzikai.txt"};
+
 bool nuskaitytifaila()
 {
     ifstream is("klasiokai.txt");
@@ -27,28 +29,27 @@ bool nuskaitytifaila()
 }
 
 ////////////////overload????
-bool nfaila()
+void nfaila()
 {
-    ifstream is("desimt.txt");
+    ifstream is;
     string lin, vard, pav;
     int nd1,nd2,nd3,nd4,nd5,egz;
 
     Sduomenys Sd_temp1;
 
-    if (is.fail())
+    for (int i=0; i<5; i++)
     {
-         cout<<"Neatidare failo klasiokai.txt"<<endl;
-         return false;
-    }
-
-    while (getline(is,lin))
+        is.open(fpav[i]);
+        while (getline(is,lin))
     {
         is>>vard>>pav>>nd1>>nd2>>nd3>>nd4>>nd5>>egz;
         Sd_temp1.autpildymas(vard,pav,nd1,nd2,nd3,nd4,nd5,egz);
         lentele.push_back(Sd_temp1);
     }
     is.close();
-    return true;
+    }
+
+
 }
 
 ////////////overload???
@@ -58,13 +59,14 @@ void irasas(int sar,int nr, ofstream& failas)
     failas <<sar<<"vardas"<<nr<<setw(15)<<sar<<"Pav"<<nr<<setw(10)<<rand()%10+1<<setw(5)<<rand()%10+1<<setw(5)<<rand()%10+1<<setw(5)<<rand()%10+1<<setw(5)<<rand()%10+1<<setw(5)<<rand()%10+1<<endl;
 }
 
+
 void gfailus()
 {
-    string fpav[5]= {"desimt.txt","simtas.txt","stuka.txt","10k.txt","100k.txt"};
-    ofstream ps;
+
+    ofstream ps,pp;
     int kiek[5] {10,100,1000,10000,100000};
     cout<<"Generuojami studentu sarasai: "<<endl;
-    double glaikas[5] {0,0,0,0,0};
+    double glaikas[7] {0,0,0,0,0,0,0};
 
 for (int l=0; l<5; l++)
 {
@@ -85,10 +87,39 @@ for (int f=0;f<5;f++)
         cout<<"Laikas kol sugeneravo "<<fpav[f]<<" faila: "<<glaikas[f]<<" ms"<< endl;
     }
 
+    auto tp= chrono::steady_clock::now();
     nfaila();
-    //sugrupuoti pagal galutini tiesiog if else?:
-    aisvedimas(); // aisvedimas i faila
+    auto tf= chrono::steady_clock::now();
+    auto ls= tf-tp;
+    glaikas[5]=chrono::duration<double, milli> (ls).count();
+    cout<<"Laikas kol nuskaite visus failus: "<<glaikas[5]<<" ms"<<endl;
 
+
+    sort(lentele.begin(),lentele.end(), pagalgalutini); // isruosiuoja nuo maziausio iki didziausio
+
+    auto tpp= chrono::steady_clock::now();
+
+    ps.open(fpav[5]);
+    pp.open(fpav[6]);
+    for (Sduomenys i : lentele)
+    {
+        if (i.galutinis<5)
+        {
+            ps <<i.vardas<<setw(15)<<i.pavarde<<setw(10)<<i.pazymiai[0]<<setw(5)<<i.pazymiai[1]<<setw(5)<<i.pazymiai[2]<<setw(5)<<i.pazymiai[3]<<setw(5)<<i.pazymiai[4]<<setw(5)<<i.egzaminas<<setw(5)<<i.galutinis<<endl;
+        }
+        else
+        {
+            pp <<i.vardas<<setw(15)<<i.pavarde<<setw(10)<<i.pazymiai[0]<<setw(5)<<i.pazymiai[1]<<setw(5)<<i.pazymiai[2]<<setw(5)<<i.pazymiai[3]<<setw(5)<<i.pazymiai[4]<<setw(5)<<i.egzaminas<<setw(5)<<i.galutinis<<endl;
+        }
+
+	}
+	ps.close();
+	pp.close();
+
+    auto tfp= chrono::steady_clock::now();
+    auto lsp= tfp-tpp;
+    glaikas[6]=chrono::duration<double, milli> (lsp).count();
+    cout<<"Laikas kol suegeneravo tinginiu ir grauziku failus: "<<glaikas[6]<<" ms"<<endl;
 
 }
 

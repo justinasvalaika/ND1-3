@@ -1,0 +1,10 @@
+0vardas0              0Pav0         5   10    1    5    8    2
+0vardas1              0Pav1         6    6    5    3    9    9
+0vardas2              0Pav2         3    6    2    2    8    2
+0vardas3              0Pav3         4    3    5    2    7    8
+0vardas4              0Pav4         6    9    7    2    3    3
+0vardas5              0Pav5         3   10    9    2    7    8
+0vardas6              0Pav6         2    4    5    6   10    8
+0vardas7              0Pav7         2    2    5    4    4    3
+0vardas8              0Pav8         8    3    5    8    9    4
+0vardas9              0Pav9         9   10    2    4   10    8

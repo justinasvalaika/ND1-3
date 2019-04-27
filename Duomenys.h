@@ -107,6 +107,11 @@ bool pagalpavarde(const Sduomenys &p, const Sduomenys &pa)
     return p.pavarde<pa.pavarde;
 }
 
+bool pagalgalutini(const Sduomenys &p, const Sduomenys &pa)
+{
+    return p.galutinis<pa.galutinis;
+}
+
 void aisvedimas()
 {
     sort(lentele.begin(),lentele.end(), pagalpavarde); //isrikiuojam pagal pavarde
