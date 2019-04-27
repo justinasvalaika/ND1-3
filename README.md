@@ -36,6 +36,6 @@ kiekis, vnt       laikas, ms
 100000-            769,665
 Failu nuskaitymas (visu 5) ir surasymas duomenu i vektoriu: 554,897 ms;
 Vektoriaus isvedimas i du skirtingus failus: 1230,51 ms;
-![rezultatai](https://imgur.com/SNUss8m)
+![rezultatai](https://imgur.com/SNUss8m.png)
 
 
