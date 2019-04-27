@@ -16,3 +16,24 @@ Rezultatų išvedimas rūšiuojant-pagal pavardes.
 
 v0.3 https://github.com/justinasvalaika/ND1-3/tree/v0.3
 Perkelta viskaas į headerius
+
+v0.4 https://github.com/justinasvalaika/ND1-3/tree/v0.4
+Papildyta automatiniu failu sarasu generavimu, nuskaitymu, isrusiavimu ir israsymo i skirtingus failus Grauzikai.txt ir Tinginiai.txt;
+Paleidus programa klausia ar rasysim ranka ar generuosim automatiskai, pasirenkama g-automatiniam failų generavimui.
+Generuojami failai desimt.txt, simtas.txt, stuka.txt, 10k.txt, 100k.txt su atitinkamais kiekiais  irasu. Vardai ir pavardes generuojami sabloniski. Pries kiekviena varda yra skaicius, reiskiantis is kurio failo is situ 5 yra.
+Tada visi 5 failai vienas po kito nuskaitomi, sugeneruojamas is pazymiu ir egzamino vidurkis, irasomi i vektoriu.
+Vektoriuje failai surusiuojami nuo maziausio iki didziausio galutinio pazymio.
+Duomenys isvedami i du skirtingus failus:
+Tinginiai.txt kai galutiis <5
+Grauzikai.txt kai galutinis >5
+Greičio duomenys: (faile: Laikai su debugu.png):
+failų generavimas su atsitiktiniu irasu kiekiu:
+kiekis, vnt       laikas, ms
+10-                1,554
+100-              2,063
+1000-              10,324
+10000-             79,823
+100000-            769,665
+Failu nuskaitymas (visu 5) ir surasymas duomenu i vektoriu: 554,897 ms;
+Vektoriaus isvedimas i du skirtingus failus: 1230,51 ms;
+![rezultatai](https://imgur.com/SNUss8m.png)
