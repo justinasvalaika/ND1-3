@@ -37,3 +37,27 @@ kiekis, vnt       laikas, ms
 Failu nuskaitymas (visu 5) ir surasymas duomenu i vektoriu: 554,897 ms;
 Vektoriaus isvedimas i du skirtingus failus: 1230,51 ms;
 ![rezultatai](https://imgur.com/SNUss8m.png)
+
+v0.5 https://github.com/justinasvalaika/ND1-3/tree/v0.5
+Padaryti 3 skirtingi failai vektorių, listų ir deque duoemnų apdrorojimo skaičiavimams.
+Vektoriai ir deque naudojo identiškus algoritmus duomenų rūšiavimui
+Listas privalėjo naudoti kitą komandą, dėl savo pobūdžio nes neindeksuojamas jis. (naudojo .sort(pagalgalutini)
+Eiga: 
+
+  Duomenys nuskaitomi iš identiškų 5 failų, surašant į vektorių, listą, deque
+  
+  Duomenys rūšiuojami nuo pagal galutinį pažymį nuo mažiausio iki didžiausio
+  
+  Duomenys (vektorius, listas, deque) pagal galutinį pažymį naudojant IF palyginimą. Jie surašomi į du naujus tinginiai ir grauzikai (vektorius, listus, deque)
+  
+  Duomenys surašomi į failus grauzikai.txt ir tinginiai.txt
+  
+  Laikai atvaizduojami ekrane
+  
+  Rezultatai:
+  
+  ![rezultatai](https://i.imgur.com/DAJYFEe.png)
+  
+  Listas absoliučiai, grubiai daugiau nei 10X! greičiau surūšiuoja duomenis. 
+  Duomenų skaldymas į dvi dalis/nuskaitymai/išvedimai į failą apylygiai.
+  
