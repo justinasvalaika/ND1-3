@@ -44,11 +44,17 @@ Padaryti 3 skirtingi failai vektorių, listų ir deque duoemnų apdrorojimo skai
 Vektoriai ir deque naudojo identiškus algoritmus duomenų rūšiavimui
 Listas privalėjo naudoti kitą komandą, dėl savo pobūdžio nes neindeksuojamas jis. (naudojo .sort(pagalgalutini)
 Eiga: 
+
   Duomenys nuskaitomi iš identiškų 5 failų, surašant į vektorių, listą, deque
+  
   Duomenys rūšiuojami nuo pagal galutinį pažymį nuo mažiausio iki didžiausio
+  
   Duomenys (vektorius, listas, deque) pagal galutinį pažymį naudojant IF palyginimą. Jie surašomi į du naujus tinginiai ir grauzikai (vektorius, listus, deque)
+  
   Duomenys surašomi į failus grauzikai.txt ir tinginiai.txt
+  
   Laikai atvaizduojami ekrane
+  
   Rezultatai:
   
   
