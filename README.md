@@ -59,5 +59,8 @@ Eiga:
   
   ![rezultatai](https://i.imgur.com/DAJYFEe.png)
   
+  Listas absoliučiai, grubiai daugiau nei 10X! greičiau surūšiuoja duomenis. 
+  Duomenų skaldymas į dvi dalis/nuskaitymai/išvedimai į failą apylygiai.
+  
   
 
