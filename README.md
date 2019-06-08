@@ -67,7 +67,7 @@ Eiga:
  Bandoma 2 strategija. Pagrindiniame konteineryje trinamas įrašas, ir įrašomas į tinginius, taip pagrindiniame konteineryje lieka grauzikai, o tinginiai sukuriami naujami konteineryje.
  
  Rezultatai:
-![rezultatai](https://imgur.com/wK5evoe)
+![rezultatai](https://imgur.com/PwJK0Xx)
 
 Lėčiausiai trinasi vektoriai, tam prireikė net 759 sekundžių;
 
