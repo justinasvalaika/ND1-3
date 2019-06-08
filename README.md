@@ -62,5 +62,16 @@ Eiga:
   Listas absoliučiai, grubiai daugiau nei 10X! greičiau surūšiuoja duomenis. 
   Duomenų skaldymas į dvi dalis/nuskaitymai/išvedimai į failą apylygiai.
   
-  
+ V1.0 https://github.com/justinasvalaika/ND1-3/tree/v1.0
+ Iki šiol buvo naudojama 1 strategija. Konteineris rikiuojamas, tada rūšiuojamas į dvi dalis.
+ Bandoma 2 strategija. Pagrindiniame konteineryje trinamas įrašas, ir įrašomas į tinginius, taip pagrindiniame konteineryje lieka grauzikai, o tinginiai sukuriami naujami konteineryje.
+ 
+ Rezultatai:
+![rezultatai](https://imgur.com/wK5evoe)
+
+Lėčiausiai trinasi vektoriai, tam prireikė net 759 sekundžių;
+
+Deque trinasi greičiau nei vektoriai-laikas 116 sekundžių;
+
+Listas ypač spartus, šis rūšiavimas užtruko 0,1 sekundės.
 
